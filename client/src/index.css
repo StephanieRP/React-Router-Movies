@@ -6,34 +6,22 @@ body {
 }
 
 .movie-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .movie-card {
-  background-color: #fff;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
-  cursor: pointer;
   position: relative;
   margin: 1rem auto;
   text-align: center;
-  width: 30%;
-}
-
-.movie-details {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-  text-align: center;
+  background: lightseagreen;
+  color: white;
+  width: 60%;
+  border-radius: 10px;
 }
 
 .movie-director {
@@ -42,7 +30,7 @@ body {
 }
 
 .saved-list {
-  background-color: #fff;
+  background-color: lightseagreen;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -50,7 +38,8 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
-  width: 75%;
+  /* width: 75%; */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,6 +51,12 @@ body {
 
 .saved-movie {
   margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.saved-movie:hover {
+  text-decoration: underline;
 }
 .saved-active {
   color: blue;
@@ -75,11 +70,12 @@ body {
 }
 .save-button {
   position: absolute;
-  top: 25px;
+  top: 1px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  cursor: pointer;
 }
 .save-button:hover {
   background-color: green;
@@ -89,4 +85,23 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  /* background: lightskyblue; */
+  padding: 5px;
+  /* border-radius: 4px; */
+}
+
+.link:hover {
+  text-decoration: underline;
 }

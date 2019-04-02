@@ -4,8 +4,10 @@ import { NavLink } from "react-router-dom";
 const MovieCard = ({ movie }) => {
   const { title, director, metascore, stars, id } = movie;
   return (
-    <div className="movie-details">
-      <NavLink to={`/movies/${id}`}>{title}</NavLink>{" "}
+    <div className="movie-card">
+      <NavLink to={`/movies/${id}`} className="link">
+        {title}
+      </NavLink>
       <div className="movie-director">
         Director: <em>{director}</em>
       </div>
